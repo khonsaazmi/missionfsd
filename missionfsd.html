@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- manggil css -->
     <link rel="stylesheet" href="stylemision.css" />
     <!-- judul tab di web browser -->
     <title>Mission FSD</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="flexbox">
-            <div class="brand">BrandName</div>
-            <div class="middle">
-                <a href="#pria">pria</a>
-                <a href="#wanita">wanita</a>
-                <a href="#anak">anak</a>
-                <a href="#equipment">equipment</a>
-            </div>
-            <div class="search-acc"> 
-                <input id="box" 
-                type="text" 
-                placeholder="search ...">
-                <div class="akun"><img class="button-account" alt="button-account" src="image/Button Account.png" /></div>
-            </div>
-        </nav>
+      <nav class="flexbox">
+        <div class="brand">BrandName</div>
+        <div class="middle">
+          <a href="#pria">man</a>
+          <a href="#wanita">woman</a>
+          <a href="#anak">child</a>
+          <a href="#equipment">equipment</a>
+        </div>
+        <div class="search-acc">
+          <input id="box" type="text" placeholder="search ..." />
+          <div class="akun">
+            <img
+              class="button-account"
+              alt="button-account"
+              src="image/Button Account.png"
+            />
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section id="product-thumbnail-section">
-        <div class="product-thumbnail">
-            <!-- <img class="scuba" src="image/maarten-van-den-heuvel-VAdFzJJDzgg-unsplash.jpg" alt="Product Thumbnail" /> -->
-            <div class="product-info">
-                <h3><b class="larger">Embrace</b></h3>
-                <h3>the holiday season in style!</h3>
-                <p><b class="larger">GREAT DISCOUNTS</b> await you in our <b class="larger">sale promo!</b></p>
-                <button type="button">SHOP NOW!</button>
-            </div>
+      <div class="product-thumbnail">
+        <!-- <img class="scuba" src="image/maarten-van-den-heuvel-VAdFzJJDzgg-unsplash.jpg" alt="Product Thumbnail" /> -->
+        <div class="product-info">
+          <h3><b>Embrace</b></h3>
+          <h3>the holiday season in style!</h3>
+          <p><b>GREAT DISCOUNTS</b> await you in our <b>sale promo!</b></p>
+          <button type="button">SHOP NOW!</button>
         </div>
+      </div>
     </section>
-    
+
     <footer>
-        <!-- follow us -->
-        <div class="boxx">
-            <nav class="flexbox2">
-                <div class="follow">
-                    <a href="#follow">follow us:</a>
-                </div>
-                <div class="sosmed">
-                    <a href="#ig"><img class="ig" src="image/instagram.png" /></a>
-                    <a href="#ex"><img class="ex" src="image/x.png" /></a>
-                    <a href="#fb"><img class="fb" src="image/facebook.png" /></a>
-                    <a href="#yt"><img class="yt" src="image/youtube.png" /></a>
-                    <a href="#tt"><img class="tt" src="image/tiktok.png" /></a>
-                </div>
-    
-            </nav>
-        </div>
-        <!-- copyright -->
-        <p class="copy">Copyright &copy; 2023</p>
+      <!-- follow us -->
+      <div class="boxx">
+        <nav class="flexbox2">
+          <div class="follow">
+            <a href="#follow">follow us:</a>
+          </div>
+          <div class="sosmed">
+            <a href="#ig"><img class="ig" src="image/instagram.png" /></a>
+            <a href="#ex"><img class="ex" src="image/x.png" /></a>
+            <a href="#fb"><img class="fb" src="image/facebook.png" /></a>
+            <a href="#yt"><img class="yt" src="image/youtube.png" /></a>
+            <a href="#tt"><img class="tt" src="image/tiktok.png" /></a>
+          </div>
+        </nav>
+      </div>
+      <!-- copyright -->
+      <p class="copy">Copyright &copy; 2023</p>
     </footer>
-</body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector('button[type="button"]');
+        button.addEventListener("click", function () {
+          window.open("shopnow.html", "_blank");
+        });
+      });
+      document.querySelector(".akun").addEventListener("click", function () {
+        window.open("login.html", "_blank"); // Replace with the actual URL of the target page
+      });
+    </script>
+  </body>
 </html>
-
-

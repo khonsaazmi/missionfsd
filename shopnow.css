@@ -1,0 +1,72 @@
+body {
+  background: rgb(11, 43, 56) 0%;
+  color: #ffffff;
+  font-family: "Kumbh Sans-Regular", Helvetica;
+  letter-spacing: 0;
+}
+
+header {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+header img {
+  float: right;
+  padding: 5px;
+}
+
+header div{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header p {
+  /* position: absolute; */
+  right: 10px;
+  top: 10px;
+  background-color: #f8f8f89a;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-grid img {
+  width: 100px;
+  height: 100px;
+  border: #ccc 1px solid;
+  border-radius: 10px;
+}
+
+.product-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: #ffffff68 1px solid;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.247);
+  backdrop-filter: blur(5px) brightness(100%);
+}
