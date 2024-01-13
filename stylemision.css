@@ -1,0 +1,165 @@
+/* BACKGROUND */
+body {
+    background-image: url(foto-base.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: "Kumbh Sans-Regular", Helvetica;
+    letter-spacing: 0;
+}
+  
+body::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    clear: both;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgb(11, 43, 56) 0%,
+      rgba(11, 43, 56, 0.89) 37.92%,
+      rgba(11, 43, 56, 0.72) 47.92%,
+      rgba(11, 43, 56, 0) 61.42%
+    );
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.middle a {
+    color: #ffffff;
+    padding-inline: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.middle a:hover {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.brand {
+    justify-self: left;
+    text-shadow: 0px 4px 8px #00000040;
+
+    font-weight: 750;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+#box {
+    /* position: absolute; */
+    width: 60%;
+    height: 20px;
+    left: 0;
+    border-radius: 15px;
+    border: #ffffffb2 2px solid;
+    margin-right: 10%;
+    text-indent: 5%;
+    color: #ffffff;
+  
+    background-color: #ffffff4f;
+    backdrop-filter: blur(5px) brightness(100%);
+}
+
+#box::placeholder {
+    color: #ffffffa3; /* Change to desired placeholder text color */
+    font-size: smaller;
+    text-indent: 10%;
+    font-style: italic;
+}
+
+.search-acc {
+    text-shadow: 0px 4px 8px #00000040;
+    font-family: "Kumbh Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #f7f8f9;
+    font-size: 28px;
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.button-account{
+    height: 40px;
+}
+
+.boxx {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 26%;
+    height: 9%;
+    background-color: #ffffff2a;
+    border-radius: 50px 0px 0px 0px;
+    backdrop-filter: blur(10px) brightness(100%);
+    bottom: 0;
+    right: 0;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.boxx a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 2px;
+    font-weight: 500;
+}
+
+.ig, .ex, .fb, .yt, .tt {
+    height: 21px;
+    padding: 1px;
+}
+
+.follow {
+    padding-right: 2px;
+}
+
+.copy {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #f7f8f948;
+}
+
+#button-section button {
+    position: absolute; 
+    top: 55%; 
+    left: 25%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 40px #000000cf;
+    border-radius: 8px;
+    height: 50px;
+    width: 110px;
+    background-color: #f2ff00;
+    font-family: "Kumbh Sans-Regular", Helvetica;
+    font-weight: 800;
+}
