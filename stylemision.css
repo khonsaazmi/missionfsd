@@ -1,6 +1,6 @@
 /* BACKGROUND */
 body {
-    background-image: url(foto-base.png);
+    background-image: url(image/foto-base.png);
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
@@ -54,6 +54,7 @@ body::after {
     font-weight: 750;
     color: #ffffff;
     font-size: 28px;
+    text-indent: 12%;
 }
 
 #box {
@@ -150,16 +151,46 @@ body::after {
     color: #f7f8f948;
 }
 
-#button-section button {
+.product-info button {
+    /* position: absolute; 
+    top: 55%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); */
+    /* box-shadow: 5px 5px 40px #ffffff; */
+    border-radius: 50px;
+    height: 50px;
+    width: 110px;
+    background-color: #ffffff ;
+
+    color: #000000;
+    text-shadow: #68686840 5px 5px 40px;
+    font-family: "Kumbh Sans-Regular", Helvetica;
+    font-weight: 750;
+    
+}
+
+.scuba {
+    object-fit:scale-down; /* Crop image to fill the container */
+    height: 100px; /* Set a fixed height */
+    width: 100px; /* Set a fixed width */
+}
+
+#product-thumbnail-section {
     position: absolute; 
     top: 55%; 
     left: 25%; 
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 40px #000000cf;
-    border-radius: 8px;
-    height: 50px;
-    width: 110px;
-    background-color: #f2ff00;
-    font-family: "Kumbh Sans-Regular", Helvetica;
-    font-weight: 800;
+    
+}
+
+.product-info h3 {
+    padding: 0px;
+    font-size: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+} 
+
+.larger {
+    color: yellow;
+    font-size: larger;
 }
