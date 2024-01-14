@@ -8,12 +8,24 @@ body {
 header {
   justify-content: flex-end;
   align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header img {
+.cartim, .homeim {
   float: right;
   padding: 5px;
+  width: 30px;
 }
+
+.brand{
+  height: 50px;
+}
+
+
+
 
 header div{
     flex-direction: row;

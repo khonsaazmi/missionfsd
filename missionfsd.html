@@ -11,12 +11,12 @@
   <body>
     <header>
       <nav class="flexbox">
-        <div class="brand">BrandName</div>
+        <img class="brand" src="image/HONSEA.png" alt="honsea" />
         <div class="middle">
-          <a href="#pria">man</a>
-          <a href="#wanita">woman</a>
-          <a href="#anak">child</a>
-          <a href="#equipment">equipment</a>
+          <a href="#pria">Man</a>
+          <a href="#wanita">Woman</a>
+          <a href="#anak">Child</a>
+          <a href="#equipment">Equipment</a>
         </div>
         <div class="search-acc">
           <input id="box" type="text" placeholder="search ..." />
@@ -33,7 +33,6 @@
 
     <section id="product-thumbnail-section">
       <div class="product-thumbnail">
-        <!-- <img class="scuba" src="image/maarten-van-den-heuvel-VAdFzJJDzgg-unsplash.jpg" alt="Product Thumbnail" /> -->
         <div class="product-info">
           <h3><b>Embrace</b></h3>
           <h3>the holiday season in style!</h3>
@@ -48,7 +47,7 @@
       <div class="boxx">
         <nav class="flexbox2">
           <div class="follow">
-            <a href="#follow">follow us:</a>
+            <a href="#follow">Follow us:</a>
           </div>
           <div class="sosmed">
             <a href="#ig"><img class="ig" src="image/instagram.png" /></a>
@@ -67,11 +66,12 @@
       document.addEventListener("DOMContentLoaded", function () {
         var button = document.querySelector('button[type="button"]');
         button.addEventListener("click", function () {
-          window.open("shopnow.html", "_blank");
+          window.location.href = "shopnow.html"; // Replace with the actual URL of the target page
         });
       });
+
       document.querySelector(".akun").addEventListener("click", function () {
-        window.open("login.html", "_blank"); // Replace with the actual URL of the target page
+        window.location.href = "login.html"; 
       });
     </script>
   </body>

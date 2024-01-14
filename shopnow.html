@@ -8,9 +8,16 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="image/cart.png" alt="Product Image" />
+      <div class="cart">
+        <img class="cartim" src="image/cart.png" alt="cart" />
         <p>0</p>
+      </div>
+      <div class="honsea">
+        <img class="brand" src="image/HONSEA.png" alt="honsea" />
+        <h5>SHOP</h5>
+      </div>
+      <div class="home">
+        <img class="homeim" src="image/HOME.png" alt="home" />
       </div>
     </header>
     <section class="product-grid">
@@ -41,7 +48,12 @@
         <p>Rp 364.000</p>
         <button type="button">Add to Cart</button>
       </div>
-      <!-- Repeat the above div block for each product you want to display -->
+      
+      <script>
+        document.querySelector(".homeim").addEventListener("click", function () {
+        window.location.href = "missionfsd.html"; 
+      });
+      </script>
     </section>
   </body>
 </html>
