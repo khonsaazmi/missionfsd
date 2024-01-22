@@ -1,6 +1,6 @@
 /* BACKGROUND */
 body {
-  background-image: url(image/foto-base.png);
+  background-image: url(foto-base.png);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -33,6 +33,7 @@ body::after {
   );
 }
 
+/* LOGIN */
 .login-container {
   background-color: #ffffff32;
   backdrop-filter: blur(5px) brightness(100%);
